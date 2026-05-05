@@ -7,9 +7,9 @@ const Header = ({title, tag}) => {
     }
     return (
         <div className="py-14 md:py-20 text-center">
-            <sec className={` font-bold tracking-wider text-transparent bg-clip-text bg-linear-to-r from-indigo-600 to-gray-400 ${sizeClasses[tag]}`}>
+            <p className={` font-bold tracking-wider text-transparent bg-clip-text bg-linear-to-r from-indigo-600 to-gray-400 ${sizeClasses[tag]}`}>
                 {title}
-            </sec>
+            </p>
         </div>
     );
 };

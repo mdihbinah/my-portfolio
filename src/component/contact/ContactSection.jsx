@@ -14,7 +14,7 @@ const contactInfo = [
     },
     {
         icon: <FaPhone className="w-6 h-6"></FaPhone>,
-        title: 'Email',
+        title: 'Phone',
         value: '+8801521711090',
         link: '+8801521711090'
     },
@@ -107,7 +107,7 @@ const ContactSection = () => {
                         <button className="w-full px-8 py-2 bg-linear-to-r from-blue-900 to-purple-700 hover:from-blue-700 hover:to-purple-600 font-medium transition-all duration-500 hover:scale-[1.03] active:scale-[0.98] inline-flex items-center justify-center gap-2 cursor-pointer disabled:cursor-not-allowed disabled:opacity-70 rounded-lg">
 
                             {
-                                true ?
+                                loading ?
                                     <>
                                         <span className="w-6 h-6 border-3 border-white/30 border-t-white 
                             border-b-white 
