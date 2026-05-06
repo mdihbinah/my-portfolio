@@ -13,10 +13,10 @@ const MyEducation = () => {
                     <div data-aos='fade-right' className="row-span-1">
                         <EducationCard Icon={LuGraduationCap} role={'B.Sc. in Mathematics'} institution={'University of Barishal'} date={'February 2023 - Present'}></EducationCard>
                     </div>
-                    <div data-aos='fade-left' className="row-span-1">
+                    <div data-aos='fade-up' className="row-span-1">
                         <EducationCard Icon={FaSchool} role={'Higher Secondary Certificate (HSC)'} institution={'Bisharkandi Sher-E-Bangla College'} date={'2020 - 2022'}></EducationCard>
                     </div>
-                    <div data-aos='fade-right' className="row-span-1">
+                    <div data-aos='fade-left' className="row-span-1">
                         <EducationCard Icon={LiaSchoolSolid} role={'Secondary School Certificate (SSC)'} institution={'Rajapur Secondary School'} date={'2013 - 2019'}></EducationCard>
                     </div>
                 </div>
