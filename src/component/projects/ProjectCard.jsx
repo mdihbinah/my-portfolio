@@ -27,8 +27,8 @@ const ProjectCard = ({imagePath, title, tags, githubLink, liveLink, description}
                 }
             </div>
             <div className="flex gap-3 m-3">
-                <a target="_blank" href={githubLink} className="rounded-full bg-blue-500 px-3 py-1 flex justify-center items-center gap-2 hover:scale-105 duration-300"><FaGithub />Github Link</a>
-                <a target="_blank" href={liveLink} className="rounded-full bg-blue-500 px-3 py-1 flex justify-center items-center gap-2 hover:scale-105 duration-300"><FaLink />Live Link</a>
+                <a target="_blank" href={githubLink} className="rounded-md bg-blue-500 px-4 py-1 flex justify-center items-center gap-3 hover:scale-105 duration-300"><FaGithub />Github Link</a>
+                <a target="_blank" href={liveLink} className="rounded-md bg-blue-500 px-3 py-1 flex justify-center items-center gap-2 hover:scale-105 duration-300"><FaLink />Live Link</a>
             </div>
             
         </div>

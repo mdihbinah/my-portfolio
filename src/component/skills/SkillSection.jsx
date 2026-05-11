@@ -48,7 +48,7 @@ const SkillSection = () => {
         <div>
             <section id="skills">
                 <Header title={'My Skills'} tag={'h2'}></Header>
-                <div className="flex flex-wrap justify-center gap-6">
+                <div className="w[90%] sm:w-[80%] mx-auto flex flex-wrap justify-center gap-6">
                     {
                         skills.map((skill, index) => {
                             return <div
@@ -62,7 +62,7 @@ const SkillSection = () => {
                                         data-aos='flip-right'
                                         // data-aos-delay={(12 -index) * 200}
                                         data-aos-delay={(index) * 200}
-                                        className="text-5xl text-purple-300">
+                                        className="text-5xl text-purple-600">
                                         {skill.icon}
                                     </div>
                                     <p className="text-xl font-semibold my-3 text-indigo-400">{skill.name}</p>
