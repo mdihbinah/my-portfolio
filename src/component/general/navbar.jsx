@@ -8,6 +8,7 @@ import { useEffect, useState } from "react";
 
 export const navlinks = [
     { url: '#home', label: 'Home' },
+    { url: '#about-me', label: 'About Me' },
     { url: '#skills', label: 'Skills' },
     { url: '#projects', label: 'Projects' },
     { url: '#services', label: 'Services' },

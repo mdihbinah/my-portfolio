@@ -6,8 +6,8 @@ const Header = ({title, tag}) => {
         h2: 'text-2xl md:text-3xl'
     }
     return (
-        <div className="py-14 md:py-20 text-center">
-            <p className={` font-bold tracking-wider text-transparent bg-clip-text bg-linear-to-r from-indigo-600 to-gray-400 ${sizeClasses[tag]}`}>
+        <div className="py-14 md:py-20 text-center w-full flex justify-center">
+            <p className={`w-70 font-bold tracking-wider text-transparent bg-clip-text bg-linear-to-r from-indigo-800 to-gray-200 ${sizeClasses[tag]}`}>
                 {title}
             </p>
         </div>

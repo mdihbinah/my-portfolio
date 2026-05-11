@@ -6,12 +6,14 @@ import AnimationLayout from "../../layout/AnimationLayout";
 import { Toaster } from "react-hot-toast";
 import ProjectSection from "@/component/projects/ProjectSection";
 import MyEducation from "@/component/education/MyEducation";
+import About from "@/component/about-me/About-me";
 
 export default function Home() {
   return (
     <div className="">
       <AnimationLayout>
         <HeroSection></HeroSection>
+        <About></About>
         <SkillSection></SkillSection>
         <ProjectSection></ProjectSection>
         <MyEducation></MyEducation>

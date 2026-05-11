@@ -57,7 +57,7 @@ const SkillSection = () => {
                                 data-aos-delay={index * 100}
                                 className="">
                                 <div
-                                    className="bg-slate-900 text-center w-35 h-40 rounded-2xl flex flex-col items-center justify-center shadow-lg hover:scale-110 duration-300">
+                                    className="bg-slate-900 text-center w-40 h-40 rounded-2xl flex flex-col items-center justify-center shadow-lg hover:scale-110 duration-300">
                                     <div
                                         data-aos='flip-right'
                                         // data-aos-delay={(12 -index) * 200}
