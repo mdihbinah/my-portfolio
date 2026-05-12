@@ -33,7 +33,7 @@ const NavBar = () => {
     }, [])
 
     return (
-        <nav className={`h-18 fixed z-50 w-full transition-all duration-300 ${navBackground ? 'bg-slate-800 opacity-90 shadow-md' : ''}`}>
+        <nav className={`h-18 fixed z-50 w-full transition-all duration-300 ${navBackground ? 'backdrop-blur-lg bg-white/20 opacity-90 shadow-md' : ''}`}>
             <div className="flex justify-between items-center h-full w-[90%] mx-auto">
                 <Logo></Logo>
 
