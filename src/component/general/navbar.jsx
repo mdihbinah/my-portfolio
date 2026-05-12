@@ -11,8 +11,8 @@ export const navlinks = [
     { url: '#about-me', label: 'About' },
     { url: '#skills', label: 'Skills' },
     { url: '#projects', label: 'Projects' },
-    { url: '#services', label: 'Services' },
     {url:'#myeducation', label:'Education'},
+    { url: '#services', label: 'Services' },
     { url: '#contact', label: 'Contact' },
 ]
 
