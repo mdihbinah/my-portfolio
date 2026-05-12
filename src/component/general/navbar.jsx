@@ -8,11 +8,11 @@ import { useEffect, useState } from "react";
 
 export const navlinks = [
     { url: '#home', label: 'Home' },
-    { url: '#about-me', label: 'About Me' },
+    { url: '#about-me', label: 'About' },
     { url: '#skills', label: 'Skills' },
     { url: '#projects', label: 'Projects' },
     { url: '#services', label: 'Services' },
-    // {url:'#myeducation', label:'My Education'},
+    {url:'#myeducation', label:'Education'},
     { url: '#contact', label: 'Contact' },
 ]
 
@@ -38,7 +38,7 @@ const NavBar = () => {
                 <Logo></Logo>
 
                 {/* Nav links */}
-                <ul className="hidden lg:flex space-x-8 tracking-wider">
+                <ul className="hidden lg:flex space-x-5 xl:space-x-8 tracking-wider">
                     {
                         navlinks.map(link => {
                             return (

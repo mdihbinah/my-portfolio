@@ -6,7 +6,7 @@ import { FaSchool } from "react-icons/fa";
 
 const MyEducation = () => {
     return (
-        <section id="resume" className="my-12">
+        <section id="myeducation" className="my-12">
             <div className="w[90%] sm:w-[80%] mx-auto grid-cols-1">
                 <Header title={'MY Education'} tag={'h2'}></Header>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-rows-1 gap-8">
