@@ -11,23 +11,43 @@ export const navlinks = [
     { url: '#about-me', label: 'About' },
     { url: '#skills', label: 'Skills' },
     { url: '#projects', label: 'Projects' },
-    {url:'#myeducation', label:'Education'},
+    { url: '#myeducation', label: 'Education' },
     { url: '#services', label: 'Services' },
     { url: '#contact', label: 'Contact' },
 ]
 
+
 const NavBar = () => {
     const [navOpen, setNavOpen] = useState(false)
     const [navBackground, setNavBackground] = useState(false)
+    const [scrollMark, setScrollMark] = useState(0)
+
     useEffect(() => {
+        const scrollHandler = () => {
+            const scrollPosition = window.scrollY
+            const actualHeight = document.body.scrollHeight - window.innerHeight
+            const progress = scrollPosition / actualHeight * 100
+            setScrollMark(parseInt(progress))
+        }
+
+
+
         const navHandler = () => {
             if (window.scrollY >= 90) setNavBackground(true)
             if (window.scrollY < 90) setNavBackground(false)
         }
 
+        const test = () => {
+            window.scrollTo({
+                behavior: 'smooth'
+            })
+        }
+
         window.addEventListener('scroll', navHandler)
+        window.addEventListener('scroll', scrollHandler)
         return () => {
             window.removeEventListener('scroll', navHandler)
+            window.removeEventListener('scroll', scrollHandler)
         }
 
     }, [])
@@ -36,7 +56,6 @@ const NavBar = () => {
         <nav className={`h-18 fixed z-50 w-full transition-all duration-300 ${navBackground ? 'backdrop-blur-lg bg-white/20 opacity-90 shadow-md' : ''}`}>
             <div className="flex justify-between items-center h-full w-[90%] mx-auto">
                 <Logo></Logo>
-
                 {/* Nav links */}
                 <ul className="hidden lg:flex space-x-5 xl:space-x-8 tracking-wider">
                     {
@@ -68,6 +87,9 @@ const NavBar = () => {
                         <MobileNav navOpen={navOpen} setNavOpen={setNavOpen}></MobileNav>
                     </div>
                 </div>
+            </div>
+            <div className="w-full flex items-center rounded-full">
+                <div style={{ width: `${scrollMark}%` }} className={`h-1 rounded-full bg-indigo-400`}></div>
             </div>
         </nav>
     );
