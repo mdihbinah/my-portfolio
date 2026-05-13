@@ -28,7 +28,7 @@ const ScrollToTopButton = () => {
     return (
         <div className="">
             {
-                showButton && <button onClick={scrollToTop} className="w-12 h-12 bg-slate-800  cursor-pointer text-white rounded-full grid place-items-center fixed bottom-4 right-4">
+                showButton && <button onClick={scrollToTop} className="w-12 h-12 bg-indigo-600  cursor-pointer text-white rounded-full grid place-items-center fixed bottom-4 right-4">
                     <FaArrowUp ></FaArrowUp>
                 </button>
             }
