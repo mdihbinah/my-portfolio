@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="160" viewBox="0 0 800 160">
+  <style>
+    .g-blob1 { animation: g-drift1 12s ease-in-out infinite; }
+    .g-blob2 { animation: g-drift2 12s ease-in-out infinite; }
+    .g-blob3 { animation: g-drift3 12s ease-in-out infinite; }
+    @keyframes g-drift1 {
+      0%, 100% { transform: translate(0, 0); }
+      25% { transform: translate(40px, -25px); }
+      50% { transform: translate(0, -50px); }
+      75% { transform: translate(-40px, -25px); }
+    }
+    @keyframes g-drift2 {
+      0%, 100% { transform: translate(0, 0); }
+      25% { transform: translate(-30px, 25px); }
+      50% { transform: translate(0, 50px); }
+      75% { transform: translate(30px, 25px); }
+    }
+    @keyframes g-drift3 {
+      0%, 100% { transform: translate(0, 0); }
+      25% { transform: translate(25px, -40px); }
+      50% { transform: translate(-40px, 0); }
+      75% { transform: translate(25px, 40px); }
+    }
+    .g-p { animation: g-pulse 3s ease-in-out infinite; }
+    .p1 { animation-delay: -0.6s; }
+    .p2 { animation-delay: -1.2s; }
+    .p3 { animation-delay: -1.8s; }
+    .p4 { animation-delay: -2.4s; }
+    @keyframes g-pulse {
+      0%, 100% { opacity: 0.15; }
+      50% { opacity: 0.32; }
+    }
+  </style>
+  <defs>
+    <filter id="g-blur" x="-30%" y="-30%" width="160%" height="160%" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="60"/>
+    </filter>
+    <filter id="g-card-shadow" x="-30%" y="-30%" width="160%" height="160%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="10" stdDeviation="15" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+    <filter id="g-mini-shadow" x="-30%" y="-30%" width="160%" height="160%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+    <radialGradient id="g-blob1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.55"/>
+      <stop offset="60%" stop-color="#7c3aed" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#7c3aed" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="g-blob2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.55"/>
+      <stop offset="60%" stop-color="#22d3ee" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="g-blob3" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f472b6" stop-opacity="0.55"/>
+      <stop offset="60%" stop-color="#f472b6" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#f472b6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="g-vignette" cx="50%" cy="50%" r="65%">
+      <stop offset="50%" stop-color="rgb(0,0,0)" stop-opacity="0"/>
+      <stop offset="100%" stop-color="rgb(0,0,0)" stop-opacity="0.45"/>
+    </radialGradient>
+  </defs>
+  
+  <rect width="800" height="160" fill="#0b0b12"/>
+  <g filter="url(#g-blur)" class="g-blobs">
+    <circle class="g-blob1" cx="224.00000000000003" cy="88" r="220" fill="url(#g-blob1)"/>
+    <circle class="g-blob2" cx="576" cy="72" r="240" fill="url(#g-blob2)"/>
+    <circle class="g-blob3" cx="400" cy="168" r="200" fill="url(#g-blob3)"/>
+  </g>
+  <rect width="800" height="160" fill="url(#g-vignette)"/>
+  <g class="g-particles"><circle class="g-p p0" cx="400" cy="80" r="1.2" fill="#ffffff" opacity="0.2"/><circle class="g-p p1" cx="768.68" cy="64.45" r="1.2" fill="#ffffff" opacity="0.2"/><circle class="g-p p2" cx="422.89" cy="155.8" r="1.2" fill="#ffffff" opacity="0.2"/><circle class="g-p p3" cx="623.29" cy="8.24" r="1.2" fill="#ffffff" opacity="0.2"/><circle class="g-p p4" cx="549.49" cy="147.04" r="1.2" fill="#ffffff" opacity="0.2"/><circle class="g-p p0" cx="581.39" cy="16" r="1.2" fill="#ffffff" opacity="0.2"/><circle class="g-p p1" cx="650.43" cy="89.75" r="1.2" fill="#ffffff" opacity="0.2"/><circle class="g-p p2" cx="466.23" cy="38.04" r="1.2" fill="#ffffff" opacity="0.2"/><circle class="g-p p3" cx="131.64" cy="94.4" r="1.2" fill="#ffffff" opacity="0.2"/><circle class="g-p p4" cx="215.85" cy="17.84" r="1.2" fill="#ffffff" opacity="0.2"/></g>
+  
+  
+  <g filter="url(#g-card-shadow)">
+    <rect x="24" y="18" width="752" height="124" rx="14" ry="14" fill="rgba(255,255,255,0.04)"/>
+  </g>
+  <rect x="24.5" y="18.5" width="751" height="123" rx="14" ry="14" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+  <rect x="25.5" y="19.5" width="749" height="121" rx="13" ry="13" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  
+  <text x="138.19999999999993" y="70" fill="#f5f5f7" opacity="0.85" font-family='"Inter", system-ui, sans-serif' font-size="14" font-weight="500">made with</text>
+  <text x="215.19999999999993" y="70" fill="#7c3aed" font-family='"Inter", system-ui, sans-serif' font-size="14" font-weight="500">&lt;3</text>
+  <text x="238.29999999999993" y="70" fill="#f5f5f7" opacity="0.85" font-family='"Inter", system-ui, sans-serif' font-size="14" font-weight="500">by Md. Imam Hossain - Learning Today, Building Tomorrow</text>
+  <g transform="translate(168 87)" opacity="0.85"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="#f5f5f7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></g>
+  <text x="188" y="94" fill="#f5f5f7" opacity="0.65" font-family="ui-monospace, SFMono-Regular, monospace" font-size="11" font-weight="500" dominant-baseline="middle">mdihbinah@gmail.com</text>
+  <g transform="translate(335 87)" opacity="0.85"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="#f5f5f7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10"/><path d="M12 2a15.3 15.3 0 0 0-4 10 15.3 15.3 0 0 0 4 10"/></svg></g>
+  <text x="355" y="94" fill="#f5f5f7" opacity="0.65" font-family="ui-monospace, SFMono-Regular, monospace" font-size="11" font-weight="500" dominant-baseline="middle">https://my-portfolio-mdihbinah.vercel.app/</text>
+  <text x="758" y="130" fill="#f5f5f7" opacity="0.35" font-family="ui-monospace, SFMono-Regular, monospace" font-size="10" font-weight="400" text-anchor="end">made with ryme.md</text>
+  <rect x="0.5" y="0.5" width="799" height="159" rx="14" ry="14" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+</svg>
