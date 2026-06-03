@@ -26,9 +26,9 @@ const MobileNav = ({ navOpen, setNavOpen }) => {
                 }
                 <div className="my-4">
                     <LinkButton
-                        href={'/documents/CV.pdf'}
+                        href={'/documents/resume.pdf'}
                         download
-                        text={'Download CV'}
+                        text={'Resume'}
                         icon={LuDownload}
                         iconPosition="right"
                     ></LinkButton>

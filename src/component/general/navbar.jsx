@@ -73,9 +73,9 @@ const NavBar = () => {
                 <div className="">
                     <div className="hidden lg:block">
                         <LinkButton
-                            href={'/documents/CV.pdf'}
+                            href={'/documents/resume.pdf'}
                             download
-                            text={'Download CV'}
+                            text={'Resume'}
                             icon={LuDownload}
                             iconPosition="right"
                         ></LinkButton>
