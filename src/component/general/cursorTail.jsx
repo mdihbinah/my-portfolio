@@ -60,7 +60,7 @@ const CursorTrail = () => {
         <div
           key={i}
           ref={(el) => (dotsRef.current[i] = el)}
-          className="absolute top-0 left-0 rounded-full bg-[#f7edee]"
+          className="absolute top-0 left-0 rounded-full bg-pink-400"
           style={{
             width: `${12 - i * 0.4}px`,
             height: `${12 - i * 0.4}px`,
