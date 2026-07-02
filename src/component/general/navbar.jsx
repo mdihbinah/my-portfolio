@@ -73,7 +73,7 @@ const NavBar = () => {
                 <div className="">
                     <div className="hidden lg:block">
                         <LinkButton
-                            href={'/documents/resume.pdf'}
+                            href={'https://drive.google.com/file/d/1gUDbtJ3ow5z_xz01yg2KOtE1ptndsqMl/view?usp=sharing'}
                             download
                             text={'Resume'}
                             icon={LuDownload}
